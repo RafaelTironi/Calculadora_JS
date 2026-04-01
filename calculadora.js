@@ -1,6 +1,6 @@
 let parcial = "";
 let opRealizada = document.getElementById("operacaoRealizada");
-let txtResult = document.getElementById("txtResult");
+let txtResult = document.getElementById("Resultado");
 let opSelecionada = "";
 let numero = "";
 let ultimoNumero = "";
@@ -12,7 +12,7 @@ function adicionarNumero(num) {
 
     if (numero == '0' && opSelecionada == '/') {
         limpar();
-        txtResult.innerHTML = "Não é possível dividir por zero";
+        txtResult.innerHTML = "ERR";
         return;
     }
     if (ultimoNumero == 'adicionarNumero') {
@@ -21,11 +21,10 @@ function adicionarNumero(num) {
 }
 
 function operador(op) {
-    alert(op)
     opSelecionada = op;
     ultimoNumero = 'operador';
     parcial += op;
-    numero = 0;
+    numero = "";
     opRealizada.innerHTML = parcial;
 }
 
