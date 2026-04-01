@@ -1,0 +1,30 @@
+html {
+    background-image: url(assets/black_wallpaper.png);
+}
+
+header {
+    text-align: center;
+    color: white;
+
+}
+
+.Calculadora {
+    width: fit-content;
+    margin: 50px auto;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 12px;
+    background-color:whitesmoke;
+}
+
+.botao {
+    width: 80px;
+    height: 80px;
+    margin: 3px;
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+
+}
